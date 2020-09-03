@@ -17,7 +17,7 @@ class CreateTicketsTable extends Migration
             $table->integer('ticket_id');
             $table->integer('theater_id');
             $table->integer('movie_id');
-            $table->integer('customer_id');
+            $table->integer('user_id');
             $table->integer('seat_id');
             $table->integer('price');
             $table->date('date');
@@ -28,7 +28,7 @@ class CreateTicketsTable extends Migration
             $table->primary('ticket_id')->autoIncrement();
             $table->foreign('theater_id', 'tickets_fk1')->references('theater_id')->on('theaters')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('movie_id', 'tickets_fk2')->references('movie_id')->on('movies')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('customer_id', 'tickets_fk3')->references('customer_id')->on('customers')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('user_id', 'tickets_fk3')->references('user_id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('seat_id', 'tickets_fk4')->references('seat_id')->on('seats')->onDelete('cascade')->onUpdate('cascade');
         
         });
