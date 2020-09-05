@@ -19,5 +19,24 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//homepage
 Route::get('/home', 'HomeController@index')->name('home');
+
+                                
+//******************************* USERS *******************************//
+//overall users
 Route::get('/user', 'UserController@index')->name('user');
+
+//edit users
+Route::get('edit-records','UserController@index');
+Route::get('edit/{id}','UserController@show');
+Route::post('edit/{id}','UserController@edit');
+
+//delete users
+Route::get('delete-records','UserController@index');
+Route::get('delete/{id}','UserController@destroy');
+//*********************************************************************//
+
+//******************************* MOVIE *******************************//
+
+//*********************************************************************//
