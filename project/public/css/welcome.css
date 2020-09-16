@@ -1,0 +1,70 @@
+html, body {
+    background-color: #f4f4f4;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://mblogthumb-phinf.pstatic.net/MjAyMDAyMjBfMjE2/MDAxNTgyMTg1OTk1MjAy.DJyFudRegLds64wS_iLfszKSeGfZOgrm5YDkgrymXdIg.Ar7HuNvGVHKgtlrZ8ytX5K1E41N8-5RuFLUuVcockVAg.GIF.cha-cha97/1582185994181.gif?type=w800');
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+    color: black;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.bg{
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cine{
+    color: #f4f4f4;
+    font-weight: bold;
+}
+#tar{
+    color: #f4f4f4;
+}
